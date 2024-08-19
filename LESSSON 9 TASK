@@ -1,0 +1,399 @@
+{
+	"id": "1c41a89a-59e8-4350-8074-e348e2e1fade",
+	"name": "STSTStudentCourse",
+	"timestamp": "2024-08-19T10:23:49.187Z",
+	"collection_id": "37643743-ac2d3110-ffa8-46cc-a11a-0edc37a0c1ef",
+	"folder_id": 0,
+	"environment_id": "37643743-3df84d9c-52a4-4023-8419-18c2da9c2cbc",
+	"totalPass": 9,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-08-19T10:23:41.572Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "256b33ec-1928-41aa-af7f-2e38a706655e",
+			"name": "Get All Todo Entries",
+			"url": "https://demo.fusio-project.org/index.php",
+			"time": 787,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"confirm that title is Fusio": true,
+				"Status code is 200": true,
+				"Status code name has OK string": true,
+				"confirm that categories has all specified values": false,
+				"Response status code is 200": true,
+				"Response body is a valid JSON": true,
+				"confirm that paymentCurrency is EUR ": true
+			},
+			"testPassFailCounts": {
+				"confirm that title is Fusio": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has OK string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that categories has all specified values": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response body is a valid JSON": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm that paymentCurrency is EUR ": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				787
+			],
+			"allTests": [
+				{
+					"confirm that title is Fusio": true,
+					"Status code is 200": true,
+					"Status code name has OK string": true,
+					"confirm that categories has all specified values": false,
+					"Response status code is 200": true,
+					"Response body is a valid JSON": true,
+					"confirm that paymentCurrency is EUR ": true
+				}
+			]
+		},
+		{
+			"id": "c7cf9ed5-2d4a-4282-ab9e-f84377887ee0",
+			"name": "Get All Entries",
+			"url": "https://demo.fusio-project.org/index.php",
+			"time": 195,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				195
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "afb8c82d-b083-4e65-95f1-b80f3a828b82",
+			"name": "Get entry per ID - Valid ID",
+			"url": "https://demo.fusio-project.org/index.php",
+			"time": 197,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				197
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "33dfc1a5-dcc4-443f-85bd-5d92c0747bc9",
+			"name": "Get entry per ID - Invalid ID(params not using TODO ID)",
+			"url": "https://demo.fusio-project.org/index.php",
+			"time": 188,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				188
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "af3ef48d-fa95-43b8-87f5-0a5ba533e650",
+			"name": "Get All Books",
+			"url": "https://simple-books-api.glitch.me/books",
+			"time": 1402,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Print 'console' from the response body": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Print 'console' from the response body": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				1402
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Print 'console' from the response body": true
+				}
+			]
+		},
+		{
+			"id": "a1b2cb51-f6a7-4da9-bc6e-effd6a37d15e",
+			"name": "Get Books by ID",
+			"url": "https://simple-books-api.glitch.me/books/:bookId",
+			"time": 286,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				286
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1d252e31-8323-48c0-a337-0cdda52f9348",
+			"name": "Get Books by Type",
+			"url": "https://simple-books-api.glitch.me/books?type=fiction",
+			"time": 258,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				258
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "136a1f34-3233-4ed0-8d6d-21e89f88402f",
+			"name": "Place a book order - using book ID",
+			"url": "https://simple-books-api.glitch.me/orders",
+			"time": 280,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				280
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3f6e8806-cb8e-4be0-a744-4caf6a20542a",
+			"name": "Get all orders",
+			"url": "https://simple-books-api.glitch.me/orders",
+			"time": 444,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				444
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "13266123-8065-448d-bc69-6b5f7b3b915d",
+			"name": "Get an order - using orderID",
+			"url": "https://simple-books-api.glitch.me/orders/AaX7WGCUeHH3lRwGRh57M",
+			"time": 326,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				326
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "2fed2881-273c-498f-b1cc-11a6a84b516f",
+			"name": "Update an order",
+			"url": "https://simple-books-api.glitch.me/orders/",
+			"time": 310,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				310
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d8e2f1f0-1a83-41bf-9418-008e2de65866",
+			"name": "Delete an order",
+			"url": "https://simple-books-api.glitch.me/orders/rObASEWYlVrRX6cTAEgbt",
+			"time": 337,
+			"responseCode": {
+				"code": 401,
+				"name": "Unauthorized"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				337
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "812cd4c7-2774-4b72-8591-576c9da5a72f",
+			"name": "Register API Client",
+			"url": "https://simple-books-api.glitch.me/api-clients/",
+			"time": 328,
+			"responseCode": {
+				"code": 409,
+				"name": "Conflict"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				328
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "5c657192-0f53-4eda-9dee-5ae69e607821",
+			"name": "Get API Status",
+			"url": "https://simple-books-api.glitch.me/status",
+			"time": 316,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				316
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 5654,
+	"collection": {
+		"requests": [
+			{
+				"id": "256b33ec-1928-41aa-af7f-2e38a706655e",
+				"method": "GET"
+			},
+			{
+				"id": "c7cf9ed5-2d4a-4282-ab9e-f84377887ee0",
+				"method": "GET"
+			},
+			{
+				"id": "afb8c82d-b083-4e65-95f1-b80f3a828b82",
+				"method": "GET"
+			},
+			{
+				"id": "33dfc1a5-dcc4-443f-85bd-5d92c0747bc9",
+				"method": "GET"
+			},
+			{
+				"id": "af3ef48d-fa95-43b8-87f5-0a5ba533e650",
+				"method": "GET"
+			},
+			{
+				"id": "a1b2cb51-f6a7-4da9-bc6e-effd6a37d15e",
+				"method": "GET"
+			},
+			{
+				"id": "1d252e31-8323-48c0-a337-0cdda52f9348",
+				"method": "GET"
+			},
+			{
+				"id": "136a1f34-3233-4ed0-8d6d-21e89f88402f",
+				"method": "POST"
+			},
+			{
+				"id": "3f6e8806-cb8e-4be0-a744-4caf6a20542a",
+				"method": "GET"
+			},
+			{
+				"id": "13266123-8065-448d-bc69-6b5f7b3b915d",
+				"method": "GET"
+			},
+			{
+				"id": "2fed2881-273c-498f-b1cc-11a6a84b516f",
+				"method": "POST"
+			},
+			{
+				"id": "d8e2f1f0-1a83-41bf-9418-008e2de65866",
+				"method": "DELETE"
+			},
+			{
+				"id": "812cd4c7-2774-4b72-8591-576c9da5a72f",
+				"method": "POST"
+			},
+			{
+				"id": "5c657192-0f53-4eda-9dee-5ae69e607821",
+				"method": "GET"
+			}
+		]
+	}
+}
